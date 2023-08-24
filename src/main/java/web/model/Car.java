@@ -6,13 +6,13 @@ public class Car {
     private String series;
     private int year;
 
-    public Car() {
-    }
-
     public Car(String model, String series, int year) {
         this.model = model;
         this.series = series;
         this.year = year;
+    }
+
+    public Car() {
     }
 
     public String getModel() {
@@ -37,14 +37,5 @@ public class Car {
 
     public void setYear(int year) {
         this.year = year;
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "model='" + model + '\'' +
-                ", series='" + series + '\'' +
-                ", year=" + year +
-                '}';
     }
 }
